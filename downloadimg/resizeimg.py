@@ -3,13 +3,14 @@ import os
 
 def resize():
     # 取資料夾
-    file = input("請輸入資料夾名稱：")
+    file = input("請輸入要更改的資料夾名稱：")
+    newfile= input("請輸入新資料夾名稱:")
     f_path = f"{file}"
-    sticker_dir = "sticker"
+    sticker_dir = f"{newfile}"
     os.makedirs(sticker_dir, exist_ok=True)
 
     # 目標大小
-    target_width = 100  
+    target_width = 130
 
     # 遍歷資料夾中的所有圖片
     for fname in os.listdir(f_path):

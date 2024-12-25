@@ -7,7 +7,7 @@ def resize():
     os.makedirs(sticker_dir, exist_ok=True)
 
     # 目標大小
-    target_width = 100  
+    target_width = 130  
 
     # 遍歷資料夾中的所有圖片
     for fname in os.listdir(f_path):
